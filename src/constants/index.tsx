@@ -12,6 +12,7 @@ import TYPESCRIPT from "../assets/technologies/typescript.png";
 import NEXT from "../assets/technologies/nextjs.png";
 import ANTD from "../assets/technologies/antd.png";
 import GIT from "../assets/technologies/git.png";
+import Project01 from "../assets/project1.webp";
 
 export const menuHeader = [
   {
@@ -140,5 +141,149 @@ export const technologies = [
     name: "figma",
     icon: FIGMA,
     transition: 3.9,
+  },
+];
+
+export const projects = [
+  {
+    name: "Shop Card",
+    description:
+      "Build user UX/UI, show products, search by brands, type, price and sort, shopping cart, others...",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "typescript",
+        color: "text-[#00FFFF]",
+      },
+      {
+        name: "nodejs",
+        color: "text-[#ADFF2F]",
+      },
+      {
+        name: "mongodb",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-purple-500",
+      },
+    ],
+    image: Project01,
+    source_code_link: "https://github.com/PhongThanh0907/Shop-Ecommerce-V2",
+  },
+  {
+    name: "Porfolio",
+    description: "Build UX/UI, Animation, Show information",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "typescript",
+        color: "text-[#00FFFF]",
+      },
+      {
+        name: "three",
+        color: "text-[#ADFF2F]",
+      },
+      {
+        name: "framer-motion",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-purple-500",
+      },
+    ],
+    image: Project01,
+    source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
+  },
+  {
+    name: "Porfolio",
+    description: "Build UX/UI, Animation, Show information",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "typescript",
+        color: "text-[#00FFFF]",
+      },
+      {
+        name: "three",
+        color: "text-[#ADFF2F]",
+      },
+      {
+        name: "framer-motion",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-purple-500",
+      },
+    ],
+    image: Project01,
+    source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
+  },
+  {
+    name: "Porfolio",
+    description: "Build UX/UI, Animation, Show information",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "typescript",
+        color: "text-[#00FFFF]",
+      },
+      {
+        name: "three",
+        color: "text-[#ADFF2F]",
+      },
+      {
+        name: "framer-motion",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-purple-500",
+      },
+    ],
+    image: Project01,
+    source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
+  },
+  {
+    name: "Porfolio",
+    description: "Build UX/UI, Animation, Show information",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "typescript",
+        color: "text-[#00FFFF]",
+      },
+      {
+        name: "three",
+        color: "text-[#ADFF2F]",
+      },
+      {
+        name: "framer-motion",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-purple-500",
+      },
+    ],
+    image: Project01,
+    source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
   },
 ];

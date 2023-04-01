@@ -68,18 +68,27 @@
   color: #0ff;
   animation: glitch 2s infinite;
 }
-.moveUpDown-1  {
-  animation-name: moveUpDown1;
-  animation-duration: 3s;
-  animation-delay: 5.5s;
-  animation-iteration-count: infinite;
-}
-
 .moveUpDown-2  {
   animation-name: moveUpDown2;
   animation-duration: 3s;
   animation-delay: 6s;
   animation-iteration-count: infinite;
+}
+
+.spinning {
+  border-top-color: #ffffff !important;
+  border-right-color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.animation {
+  animation: animate 2s infinite ease alternate;
+}
+
+.animation-1 {
+  animation: animate1 2s infinite ease alternate;
 }
 
 @keyframes rotate {
@@ -186,5 +195,32 @@
   }
   100% {
     transform: translateY(10px);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate1 {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }

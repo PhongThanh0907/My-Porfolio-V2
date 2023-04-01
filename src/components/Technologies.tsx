@@ -17,7 +17,7 @@ export default function Technologies({}: Props) {
           transition={{ duration: technology.transition }}
           whileInView={{ opacity: 1, y: 0 }}
           className={`w-28 h-28 moveUpDown
-        ${index % 2 == 0 ? "moveUpDown-1" : "moveUpDown-2"}
+        ${index % 2 == 0 ? "animation" : "animation-1"}
           `}
           key={technology.name}
         >

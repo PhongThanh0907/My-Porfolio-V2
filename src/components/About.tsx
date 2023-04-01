@@ -56,11 +56,11 @@ export default function About({}: Props) {
 
         <motion.div
           initial={{
-            x: 200,
+            y: -200,
             opacity: 0,
           }}
           transition={{ duration: 1.2 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           className="flex justify-center items-center"
         >
           <div className="hero-img h-80 w-[90%]">
