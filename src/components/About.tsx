@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import Avatar from "../assets/imgabout.jpg";
 import TextLight from "./TextLight";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About() {
   return (
     <>
-      <div className="grid grid-cols-2 max-w-7xl mx-auto gap-14 py-20">
+      <div
+        id="about"
+        className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl px-6 lg:px-0 mx-auto gap-14 py-10 lg:py-20"
+      >
         <div>
           <motion.div
             initial={{
@@ -17,7 +18,7 @@ export default function About({}: Props) {
             transition={{ duration: 1.2 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            <h4 className="text-gray-400 text-lg">INTRODUCTION</h4>
+            <h4 className="text-gray-400 text-md lg:text-lg">INTRODUCTION</h4>
             <TextLight title="Overview" />
           </motion.div>
           <motion.div
@@ -28,7 +29,7 @@ export default function About({}: Props) {
             transition={{ duration: 1.2 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <p className="text-gray-400 text-md tracking-widest">
+            <p className="text-gray-400 text-md tracking-widest mt-8 ">
               I'm a skilled software developer with experience in TypeScript and
               JavaScript, and expertise in frameworks like React, NodeJS and
               NextJS . I'm a quick learner and collaborate closely with clients

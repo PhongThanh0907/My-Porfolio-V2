@@ -13,32 +13,33 @@ import NEXT from "../assets/technologies/nextjs.png";
 import ANTD from "../assets/technologies/antd.png";
 import GIT from "../assets/technologies/git.png";
 import Project01 from "../assets/project1.webp";
+import Project02 from "../assets/project2.jpg";
 
 export const menuHeader = [
   {
     title: "About",
-    path: "/",
-    delay: 300,
-  },
-  {
-    title: "Work Experience",
-    path: "/",
+    path: "#about",
     delay: 400,
   },
   {
-    title: "Skills",
-    path: "/",
+    title: "Work Experience",
+    path: "#workexperience",
     delay: 500,
   },
   {
-    title: "Project",
-    path: "/",
+    title: "Skills",
+    path: "#technologies",
     delay: 600,
   },
   {
-    title: "Contact",
-    path: "/",
+    title: "Project",
+    path: "#project",
     delay: 700,
+  },
+  {
+    title: "Contact",
+    path: "#contact",
+    delay: 800,
   },
 ];
 
@@ -199,7 +200,7 @@ export const projects = [
         color: "text-purple-500",
       },
     ],
-    image: Project01,
+    image: Project02,
     source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
   },
   {
@@ -227,7 +228,7 @@ export const projects = [
         color: "text-purple-500",
       },
     ],
-    image: Project01,
+    image: Project02,
     source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
   },
   {
@@ -255,7 +256,7 @@ export const projects = [
         color: "text-purple-500",
       },
     ],
-    image: Project01,
+    image: Project02,
     source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
   },
   {
@@ -283,7 +284,7 @@ export const projects = [
         color: "text-purple-500",
       },
     ],
-    image: Project01,
+    image: Project02,
     source_code_link: "https://github.com/PhongThanh0907/My-Porfolio-V2",
   },
 ];

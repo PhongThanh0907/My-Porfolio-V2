@@ -60,14 +60,25 @@ const ExperienceCard = ({ experience }: { experience: Experiences }) => {
 export default function WorkExperience() {
   return (
     <>
-      <motion.div className="flex flex-col justify-center py-20">
-        <p className="text-gray-400 text-lg m-auto">WHAT I HAVE DONE SO FAR</p>
+      <motion.div
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        id="workexperience"
+        transition={{ duration: 1.2 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="flex flex-col justify-center py-20"
+      >
+        <p className="text-gray-400 text-md lg:text-lg m-auto my-2 uppercase">
+          Companies I've worked for
+        </p>
         <div className="flex  justify-center">
           <Glitch title={"Work Experience"} />
         </div>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-10 lg:mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience: any, index) => (
             <ExperienceCard

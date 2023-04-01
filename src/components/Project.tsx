@@ -86,7 +86,10 @@ export default function Project() {
     }
   };
   return (
-    <div className="max-w-7xl mx-auto h-screen relative">
+    <div
+      id="project"
+      className="max-w-7xl mx-auto lg:h-screen relative px-6 lg:px-0"
+    >
       <motion.div
         initial={{
           y: -100,
@@ -95,7 +98,7 @@ export default function Project() {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        <p className="text-gray-400 text-lg">My work</p>
+        <p className="text-gray-400 text-md lg:text-lg">My work</p>
         <TextLight title="Project" />
       </motion.div>
 
@@ -107,7 +110,7 @@ export default function Project() {
           }}
           transition={{ duration: 1.2 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="mt-3 text-secondary text-[17px]  leading-[30px]"
+          className="mt-3 text-secondary text-[17px] leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -115,15 +118,15 @@ export default function Project() {
           ability to solve complex problems, work with different technologies.
         </motion.p>
       </div>
-      <button className="p-2 m-2 rounded-full absolute  bottom-52 -left-16 text-gray-500 hover:text-white duration-200">
+      <button className="hidden lg:flex p-2 m-2 rounded-full absolute  bottom-52 -left-16 text-gray-500 hover:text-white duration-200">
         <ChevronLeftIcon className="h-10 w-10" onClick={() => scrollLeft()} />
       </button>
-      <button className="p-2 m-2 rounded-full absolute  bottom-52  -right-16 text-gray-500 hover:text-white duration-200">
+      <button className="hidden lg:flex  p-2 m-2 rounded-full absolute  bottom-52  -right-16 text-gray-500 hover:text-white duration-200">
         <ChevronRightIcon className="h-10 w-10" onClick={() => scrollRight()} />
       </button>
 
       <div
-        className="mt-10 flex py-10 gap-7 overflow-x-auto max-w-7xl scrollbar-hide overflow-hidden"
+        className="mt-10 grid grid-cols-1 lg:flex lg:py-10 gap-7 overflow-x-auto max-w-7xl scrollbar-hide overflow-hidden"
         ref={slideRef}
       >
         {projects.map((project, index) => (
@@ -134,6 +137,20 @@ export default function Project() {
             }}
             transition={{ duration: 0.75, ease: "easeOut", delay: index * 0.5 }}
             whileInView={{ opacity: 1, y: 0 }}
+            className="hidden lg:flex"
+          >
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          </motion.div>
+        ))}
+        {projects.map((project, index) => (
+          <motion.div
+            initial={{
+              y: 300,
+              opacity: 0,
+            }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="lg:hidden"
           >
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           </motion.div>

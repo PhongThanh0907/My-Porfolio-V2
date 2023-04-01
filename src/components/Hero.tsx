@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import ComputersCanvas from "./canvas/Computer";
 
-type Props = {};
-
-export default function Hero({}: Props) {
+export default function Hero() {
   const [text, count] = useTypewriter({
     words: [
       "Welcome to my Portfolio",
@@ -16,7 +14,7 @@ export default function Hero({}: Props) {
   });
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[500px] lg:h-screen mx-auto mt-10 lg:mt-20 pt-20">
       <div className="absolute inset-0 top-[120px]  max-w-7xl mx-auto flex flex-row items-start gap-5 sm:px-16 px-6">
         <div className="flex flex-col justify-center items-center mt-5l">
           <div
@@ -25,7 +23,7 @@ export default function Hero({}: Props) {
           />
           <div className="w-1 h-44 lg:h-80 blue-gradient" />
         </div>
-        <div className="w-full h-[80%] absolute lg:top-[-8%] lg:left-0 lg:right-0 -left-8 top-0">
+        <div className="w-full h-[100%] lg:h-[80%] absolute lg:top-[-8%] lg:left-0 lg:right-0 -left-8 top-0">
           <ComputersCanvas />
         </div>
         <div className="absolute max-w-7xl ml-6">
